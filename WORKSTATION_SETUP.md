@@ -1,6 +1,6 @@
 # Workstation Setup
 
-Personal Ubuntu workstation bootstrap guide for local development and agent-driven setup.
+Ubuntu workstation bootstrap guide for local development and agent-assisted setup.
 
 Target system: Ubuntu 26.04 LTS or another recent Ubuntu/Debian-based system.
 
@@ -303,7 +303,7 @@ docker compose version
 
 ## 9. Run Docker Without Sudo
 
-Docker can be used without `sudo` by adding the current user to the `docker` group. This is convenient for a personal dev machine, but the `docker` group effectively grants root-level privileges on the host.
+Docker can be used without `sudo` by adding the current user to the `docker` group. This is convenient for a single-user development machine, but the `docker` group effectively grants root-level privileges on the host.
 
 ```bash
 sudo groupadd docker 2>/dev/null || true
